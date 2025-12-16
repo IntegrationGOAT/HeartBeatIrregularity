@@ -14,6 +14,7 @@ cffi @ file:///C:/b/abs_90yq4lmu83/croot/cffi_1726856448345/work
 charset-normalizer==3.4.4
 click @ file:///C:/b/abs_f9ihnt72pu/croot/click_1698129847492/work
 colorama @ file:///C:/b/abs_a9ozq0l032/croot/colorama_1672387194846/work
+coloredlogs==15.0.1
 cryptography @ file:///C:/b/abs_f4do8t8jfs/croot/cryptography_1694444424531/work
 decorator==5.2.1
 filelock==3.16.1
@@ -22,15 +23,16 @@ frozenlist @ file:///C:/b/abs_d8e__s1ys3/croot/frozenlist_1698702612014/work
 fsspec==2025.3.0
 gast @ file:///Users/ktietz/demo/mc3/conda-bld/gast_1628588903283/work
 google-auth @ file:///C:/b/abs_059sl2dhu6/croot/google-auth_1715111206543/work
-google-auth-oauthlib @ file:///tmp/build/80754af9/google-auth-oauthlib_1617120569401/work
+google-auth-oauthlib==1.0.0
 google-pasta @ file:///Users/ktietz/demo/mc3/conda-bld/google-pasta_1630577991354/work
 grpcio @ file:///C:/b/abs_ccut8qek12/croot/grpc-suite_1681912611694/work
 h5py==3.11.0
+humanfriendly==10.0
 idna==3.11
 importlib-metadata @ file:///C:/b/abs_c1egths604/croot/importlib_metadata-suite_1704813568388/work
 Jinja2==3.1.6
 joblib==1.4.2
-keras @ file:///C:/Users/builder/adipietro/mc3/tf210/conda-bld/keras_1669760570649/work/keras-2.10.0-py2.py3-none-any.whl
+keras==2.13.1
 Keras-Preprocessing @ file:///tmp/build/80754af9/keras-preprocessing_1612283640596/work
 lazy_loader==0.4
 libclang==18.1.1
@@ -50,6 +52,8 @@ numpy @ file:///C:/Users/dev-admin/mkl/numpy_and_numpy_base_1682982345978/work
 oauthlib @ file:///C:/b/abs_44riqpe5gg/croot/oauthlib_1679489644705/work
 onnx==1.17.0
 onnx-tf==1.10.0
+onnx2tf==1.20.0
+onnxruntime==1.19.2
 opt-einsum @ file:///tmp/build/80754af9/opt_einsum_1621500238896/work
 packaging @ file:///C:/b/abs_c3vlh0z4jw/croot/packaging_1720101866539/work
 pandas==2.0.3
@@ -62,6 +66,7 @@ pyasn1-modules==0.2.8
 pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
 PyJWT @ file:///C:/b/abs_04qhgo75wz/croot/pyjwt_1715095119685/work
 pyOpenSSL @ file:///C:/b/abs_08f38zyck4/croot/pyopenssl_1690225407403/work
+pyreadline3==3.5.4
 PySocks @ file:///C:/ci/pysocks_1605287845585/work
 python-dateutil==2.9.0.post0
 pytz==2025.2
@@ -75,12 +80,12 @@ six @ file:///tmp/build/80754af9/six_1644875935023/work
 soundfile==0.13.1
 soxr==0.3.7
 sympy==1.13.3
-tensorboard @ file:///C:/Users/builder/adipietro/mc3/tf210/conda-bld/tensorboard_1669760968711/work/tensorboard-2.10.0-py3-none-any.whl
-tensorboard-data-server @ file:///C:/b/abs_2fhvpo862s/croot/tensorboard-data-server_1670853600144/work/tensorboard_data_server-0.6.1-py3-none-any.whl
+tensorboard==2.13.0
+tensorboard-data-server==0.7.2
 tensorboard-plugin-wit @ file:///C:/tf/b/tensorboard-plugin-wit_1660162132996/work/tensorboard_plugin_wit-1.8.1-py3-none-any.whl
-tensorflow==2.10.0
+tensorflow==2.13.0
 tensorflow-addons==0.21.0
-tensorflow-estimator @ file:///C:/Users/builder/adipietro/mc3/tf210/conda-bld/tensorflow-estimator_1669761460695/work/tensorflow_estimator-2.10.0-py2.py3-none-any.whl
+tensorflow-estimator==2.13.0
 tensorflow-intel==2.13.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor @ file:///C:/b/abs_16qe7jhw7n/croot/termcolor_1668084642458/work
@@ -88,7 +93,7 @@ threadpoolctl==3.5.0
 torch==2.4.1
 torchvision==0.19.1
 typeguard==2.13.3
-typing_extensions @ file:///C:/b/abs_0as9mdbkfl/croot/typing_extensions_1715268906610/work
+typing_extensions==4.5.0
 tzdata==2025.3
 urllib3 @ file:///C:/b/abs_9a_f8h_bn2/croot/urllib3_1727769836930/work
 Werkzeug @ file:///C:/b/abs_8bittcw9jr/croot/werkzeug_1716533366070/work
