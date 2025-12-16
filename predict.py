@@ -1,3 +1,6 @@
+import os
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
+
 import argparse
 import torch
 import torch.nn as nn
@@ -5,10 +8,12 @@ import torch.nn.functional as F
 import numpy as np
 import h5py
 import pandas as pd
-from pathlib import Path
+from pathlib import Path, PosixPath, WindowsPath
 import librosa
 import soundfile
 from scipy.signal import butter, lfilter
+import pathlib
+import pickle
 
 EPS = 1E-8
 
@@ -186,8 +191,11 @@ class HeartSoundPredictor:
         """
         self.device = device if device else torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         
+        # Fix for loading checkpoints saved on Linux/Mac on Windows
+        pathlib.PosixPath = pathlib.WindowsPath
+        
         # Load checkpoint
-        checkpoint = torch.load(checkpoint_path, map_location=self.device)
+        checkpoint = torch.load(checkpoint_path, map_location=self.device, weights_only=False)
         
         # Default config for VGG_11 (can be overridden)
         if config is None:
